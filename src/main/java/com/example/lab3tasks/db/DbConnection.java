@@ -22,11 +22,10 @@ public class DbConnection {
 
     public void insertRecord(String student_name){
         try {
+            //faiza is the author
             String sqlQuery = "insert into student_record(student_name) values (?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
             preparedStatement.setString(1, student_name);
-            //preparedStatement.setString(2, student_email);
-//            preparedStatement.setString(3, student_password);
 //            preparedStatement.setString(4, student_gender);
 //            preparedStatement.setString(5, student_address);
             int noOfRowsInserted = preparedStatement.executeUpdate();

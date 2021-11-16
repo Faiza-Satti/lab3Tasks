@@ -13,7 +13,6 @@ public class ServletExample extends HttpServlet {
             response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         out.println("Servlet called");
-        out.println("Data Inserted Successfully");
         String username = request.getParameter("username");
         String email = request.getParameter("inputEmail4");
 //        String password = request.getParameter("inputPassword4");
